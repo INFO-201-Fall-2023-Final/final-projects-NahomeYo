@@ -26,6 +26,15 @@ df <- cleaned_df
 
 # Creating at least one summarization data frame
 
-
+##
+Country Name: Categorical (String)
+Year: Categorical (Character)
+Indicator Name: Categorical (String)
+Value: Continuous/Numerical (Double)
+Month: Categorical (String)
+Palestinians Injuries: Continuous/Numerical (Numeric)
+Israelis Injuries: Continuous/Numerical (Numeric)
+Palestinians Killed: Continuous/Numerical (Numeric)
+Israelis Killed: Continuous/Numerical (Numeric)
 
 
