@@ -21,20 +21,13 @@ cleaned_df <- cleaned_df[-1, ]
 df <- cleaned_df
 
 # Creating a new categorical variable
+df <- mutate(df, Category = paste(`Indicator Name`, Year))
 
 # Creating a new continuous/numerical variable
+df <- mutate(df, 
+             `Palestinians Killed` = as.numeric(`Palestinians Killed`), 
+             `Israelis Killed` = as.numeric(`Israelis Killed`)
+)
+df <- mutate(df, Total_Killed = `Palestinians Killed` + `Israelis Killed`)
 
 # Creating at least one summarization data frame
-
-##
-Country Name: Categorical (String)
-Year: Categorical (Character)
-Indicator Name: Categorical (String)
-Value: Continuous/Numerical (Double)
-Month: Categorical (String)
-Palestinians Injuries: Continuous/Numerical (Numeric)
-Israelis Injuries: Continuous/Numerical (Numeric)
-Palestinians Killed: Continuous/Numerical (Numeric)
-Israelis Killed: Continuous/Numerical (Numeric)
-
-
