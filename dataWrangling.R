@@ -15,10 +15,9 @@ Palestine_Body_Count <- mutate(Palestine_Body_Count, Year = as.character(Year))
 df <- full_join(poverty_pse, Palestine_Body_Count, by = "Year")
 
 # Cleaning the unified dataset by removing unnecessary rows and columns
-cleaned_df <- select(df, -c("Country ISO3", "Indicator Code"))
-cleaned_df <- cleaned_df[-1, ]
-
-df <- cleaned_df
+df <- df[complete.cases(df[c("Indicator Name", "Country Name")]), ]
+df <- select(df, -c("Country ISO3", "Indicator Code"))
+df <- df[-1, ]
 
 # Creating a new categorical variable
 df <- mutate(df, Category = paste(`Indicator Name`, Year))
@@ -31,3 +30,5 @@ df <- mutate(df,
 df <- mutate(df, Total_Killed = `Palestinians Killed` + `Israelis Killed`)
 
 # Creating at least one summarization data frame
+
+
