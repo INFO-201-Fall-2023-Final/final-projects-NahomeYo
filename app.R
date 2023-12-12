@@ -1,5 +1,5 @@
 # URL to app
-# https://ub8ewi-nahome-yohannes.shinyapps.io/INFO201BE8FINALPROJECT/
+# https://ub8ewi-nahome-yohannes.shinyapps.io/INFO201BEFINALPROJECT/
   
 library(shiny)
 library(ggplot2)
