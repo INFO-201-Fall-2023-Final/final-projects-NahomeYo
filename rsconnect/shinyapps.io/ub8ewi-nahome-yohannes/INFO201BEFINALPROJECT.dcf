@@ -1,12 +1,12 @@
-name: INFO201BE8FINALPROJECT
-title: INFO201BE8FINALPROJECT
+name: INFO201BEFINALPROJECT
+title: INFO201BEFINALPROJECT
 username: ub8ewi-nahome-yohannes
 account: ub8ewi-nahome-yohannes
 server: shinyapps.io
 hostUrl: https://api.shinyapps.io/v1
-appId: 10778667
-bundleId: 8038483
-url: https://ub8ewi-nahome-yohannes.shinyapps.io/INFO201BE8FINALPROJECT/
+appId: 10779127
+bundleId: 8038636
+url: https://ub8ewi-nahome-yohannes.shinyapps.io/INFO201BEFINALPROJECT/
 version: 1
 asMultiple: FALSE
 asStatic: FALSE
